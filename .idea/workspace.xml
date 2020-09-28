@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10a4d194-a137-48ff-9d42-c8f007236c89" name="Default Changelist" comment="" />
+    <list default="true" id="10a4d194-a137-48ff-9d42-c8f007236c89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-source-code.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/aop/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/aop/IOCTest_AOP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/aop/LogAspects.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/aop/MainConfigOfAOP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/aop/MathCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/entity/Blue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/ext/ExtConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/ext/MyBeanFactoryPostProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/tx/TxConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/tx/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xf/tx/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/xf/tx/IOCExt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/xf/tx/IOCTest.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,16 +31,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xf/ext/ExtConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="317">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#675#676#0" expanded="true" />
                 <element signature="e#708#709#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="33" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -42,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/xf/tx/IOCExt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="15" column="77" lean-forward="true" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+              <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,6 +120,9 @@
       <find>orderedPostProcessors</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -103,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xf/ext/Blue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xf/entity/Blue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xf/ext/ExtConfig.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -131,6 +170,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -143,91 +183,6 @@
             <path>
               <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xf" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-source-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-source-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xf" type="462c0819:PsiDirectoryNode" />
-              <item name="tx" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -358,7 +313,7 @@
       <workItem from="1601175510722" duration="285000" />
       <workItem from="1601189241377" duration="7443000" />
       <workItem from="1601255654859" duration="228000" />
-      <workItem from="1601258304199" duration="1040000" />
+      <workItem from="1601258304199" duration="1289000" />
     </task>
     <servers />
   </component>
@@ -395,7 +350,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19505000" />
+    <option name="totallyTimeSpent" value="19754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -408,9 +363,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30758226" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30758226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -425,7 +379,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.10240964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36385542" />
       <window_info anchor="bottom" id="Docker" order="9" />
       <window_info anchor="bottom" id="ConsoleMavenPlugin" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -622,14 +576,6 @@
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="jar://$USER_HOME$/software/repository/org/springframework/spring-tx/5.2.7.RELEASE/spring-tx-5.2.7.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -869,7 +815,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xf/tx/IOCExt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="15" column="77" lean-forward="true" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -878,13 +824,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xf/ext/ExtConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="317">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#675#676#0" expanded="true" />
             <element signature="e#708#709#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
         </state>
       </provider>
     </entry>
