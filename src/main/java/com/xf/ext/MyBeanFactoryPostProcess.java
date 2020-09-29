@@ -16,6 +16,8 @@ import java.util.Arrays;
 public class MyBeanFactoryPostProcess implements BeanFactoryPostProcessor {
 
 
+
+
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         System.out.println("MyBeanFactoryPostProcess...postProcessBeanFactory");
         int beanDefinitionCount = beanFactory.getBeanDefinitionCount();
