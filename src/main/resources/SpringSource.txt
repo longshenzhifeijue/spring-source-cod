@@ -31,11 +31,14 @@ public void refresh() {
 
         }
     }
+第一步:
 prepareRefresh()刷新前的预处理
 1. 记录启动时间，设置容器的active和close状态。
 2. initPropertySources():初始化一些属性设置,提供给子容器类，子容器类可覆盖该方法进行一些自定义的属性设置。
 3. getEnvironment().validateRequiredProperties()：检验属性的合法性
 4. this.earlyApplicationEvents = new LinkedHashSet<ApplicationEvent>() ：保存容器中的一些早期的事件，待事件多播器创建后执行。
+
+第二步:
 obtainFreshBeanFactory()获取BeanFactory
 提取bean的配置信息并封装成BeanDefinition实例，然后将其添加到注册中心。注册中心是一个ConcurrentHashMap<String,BeanDefinition>类型，key为Bean的名字，value为BeanDefinition实例。
 
@@ -45,6 +48,10 @@ obtainFreshBeanFactory()获取BeanFactory
     * 将创建的BeanFactory【DefaultListableBeanFactory】返回
 2. getBeanFactory() 简单的返回beanFactory，即DefaultListableBeanFactory。
 prepareBeanFactory（BeanFactory）;BeanFactory的预准备工作(BeanFactory进行一些设置)
+
+
+
+第三步:
 1. 设置BeanFactory的类加载器、支持SPEL表达式的解析器。
 2. 添加部分BeanPostProcess【ApplicationContextAwareProcessor】用于处理XXXAware接口的回调。
 3. 设置忽略的自动装配接口EnvironmentAware、EmbeddedValueResolverAware
@@ -57,10 +64,12 @@ prepareBeanFactory（BeanFactory）;BeanFactory的预准备工作(BeanFactory进
     systemProperties【Map<String, Object> getSystemProperties()】
     systemEnvironment【Map<String, Object> getSystemEnvironment()】
 
+第四步:
 postProcessBeanFactory（beanFactory）;beanFactory准备工作完成后进行的后置处理工作
 1.子类通过重写这个方法在BeanFactory创建并预准备完成后进行的后置处理工作
 ==============================================================================以上时BeanFactory的创建及预准备工作==============================================================================
 
+第五步:
 invokeBeanFactoryPostProcessors(beanFactory);执行BeanFactoryPostProcessor
     BeanFactoryPostProcessor:BeanFactory的后置处理器,在BeanFactory标准初始化执行之后执行的
     两个接口BeanFactoryPostProcessor和BeanDefinitionRegistryPostProcessor
@@ -88,7 +97,7 @@ invokeBeanFactoryPostProcessors(beanFactory);执行BeanFactoryPostProcessor
 			        postProcessor.postProcessBeanFactory(beanFactory);
 
 
-第6步
+第六步:
 registerBeanPostProcessors(BeanFactory);注册BeanPostProcessor(Bean的后置处理器)【intercept bean creation】
        不同接口类型BeanPostProcessor;在Bean创建前后对执行时机是不一样的
         BeanPostProcessor、
@@ -109,7 +118,7 @@ registerBeanPostProcessors(BeanFactory);注册BeanPostProcessor(Bean的后置处
     6)、注册一个ApplicationListenerDetector;在Bean创建完成后检查是否是ApplicationListener;
           如果是this.applicationContext.addApplicationListener((ApplicationListener<?>) bean);
 
-第7步
+第七步:
 initMessageSource();初始化MessageSource组件(做国际化相关功能,消息绑定,消息解析)
     1)、获取BeanFactory
     2)、看容器中是否有id为messageSource的,类型是MessageSource的组件
